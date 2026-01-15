@@ -90,7 +90,7 @@ body {
 /* Hero Section Modernization */
 .hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero.is-light {
@@ -149,6 +149,10 @@ body {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
 }
 
 .publication-venue {
@@ -202,7 +206,8 @@ body {
 
 .author-block {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 0;
+  white-space: nowrap;
 }
 
 .publication-banner img {
