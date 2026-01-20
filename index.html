@@ -387,6 +387,10 @@ End image carousel -->
               <img src="static/images/data_synthesis_all.png" alt="Data Synthesis" loading="lazy" style="max-width: 100%; height: auto; border-radius: 8px;"/>
             </div>
           </div>
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p><strong>(1)</strong> We use language embedded 3D Gaussian Splatting to create training data from arbitrary objects. Rapidly exploring Random Trees (RRT*) are used to generate trajectories through the environment.</p>
+            <p><strong>(2)</strong> We use a simulated robust model predictive control expert policy to track these trajectories, storing the control actions as training data. As we do this, we render ego-view camera images in the Gaussian Splat, and process them with a dense semantic segmentation image processor to create language conditioned visuomotor training data.</p>
+          </div>
         </div>
       </div>
     </div>
