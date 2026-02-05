@@ -31,7 +31,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
   <meta property="article:author" content="Maximilian Adang">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="KEYWORD1">
@@ -40,23 +40,25 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <meta name="twitter:site" content="@maximilianadang">
   <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:creator" content="@maximilianadang">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
+  <meta name="twitter:title" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description" content="An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image:alt" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_title" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones">
+  <meta name="citation_author" content="Adang, Maximilian">
+  <meta name="citation_author" content="Low, JunEn">
+  <meta name="citation_author" content="Shorinwa, Ola">
+  <meta name="citation_author" content="Schwager, Mac">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="ICRA 2026">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
   
   <!-- Additional SEO -->
@@ -119,31 +121,47 @@
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Maximilian Adang",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Stanford University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "JunEn Low",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Stanford University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Ola Shorinwa",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Stanford University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Mac Schwager",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Stanford University"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2025",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "ICRA 2026"
     },
     "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "keywords": ["drones", "navigation", "vision-language", "robot learning", "Gaussian splatting", "imitation learning"],
+    "abstract": "Large vision-language models have driven remarkable progress in open-vocabulary robot policies, e.g., generalist robot manipulation policies, that enable robots to complete complex tasks specified in natural language. Despite these successes, open-vocabulary autonomous drone navigation remains an unsolved challenge due to the scarcity of large-scale demonstrations, real-time control demands of drones for stabilization, and lack of reliable external pose estimation modules. In this work, we present SINGER for language-guided autonomous drone navigation in the open world using only onboard sensing and compute. To train robust, open-vocabulary navigation policies, SINGER leverages three central components: (i) a photorealistic language-embedded flight simulator with minimal sim-to-real gap using Gaussian Splatting for efficient data generation, (ii) an RRT-inspired multi-trajectory generation expert for collision-free navigation demonstrations, and these are used to train (iii) a lightweight end-to-end visuomotor policy for real-time closed-loop control. Through extensive hardware flight experiments, we demonstrate superior zero-shot sim-to-real transfer of our policy to unseen environments and unseen language-conditioned goal objects. When trained on ~700k-1M observation action pairs of language conditioned visuomotor data and deployed on hardware, SINGER outperforms a velocity-controlled semantic guidance baseline by reaching the query 23.33% more on average, and maintains the query in the field of view 16.67% more on average, with 10% fewer collisions.",
+    "citation": "@misc{adang2025singeronboardgeneralistvisionlanguage, title={SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones}, author={Maximilian Adang and JunEn Low and Ola Shorinwa and Mac Schwager}, year={2025}, eprint={2509.18610}, archivePrefix={arXiv}, primaryClass={cs.RO}, url={https://arxiv.org/abs/2509.18610}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
@@ -153,11 +171,11 @@
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Vision-Language Navigation"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Autonomous Drone Navigation"
       }
     ]
   }
@@ -168,12 +186,12 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "name": "Stanford Multi-robot Systems Lab",
+    "url": "https://msl.stanford.edu",
     "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
     "sameAs": [
       "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://github.com/madang6"
     ]
   }
   </script>
