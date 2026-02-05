@@ -8,7 +8,7 @@
   <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones - Maximilian Adang, JunEn Low, Ola Shorinwa, Mac Schwager">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="drones, navigation, semantic, open world, robot learning, egocentric">
   <!-- TODO: List all authors -->
@@ -23,7 +23,7 @@
   <!-- TODO: Same as paper title above -->
   <meta property="og:title" content="SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
   <!-- TODO: Create a 1200x630px preview image and update path -->
@@ -46,7 +46,7 @@
   <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="PAPER_TITLE">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="twitter:description" content="An Onboard Generalist Vision-Language Navigation Policy for Drones">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
@@ -115,7 +115,7 @@
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "SINGER: An Onboard Generalist Vision-Language Navigation Policy for Drones",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "description": "An Onboard Generalist Vision-Language Navigation Policy for Drones",
     "author": [
       {
         "@type": "Person",
@@ -282,7 +282,7 @@
 
             <!-- TODO: Replace with your GitHub repository URL -->
             <span class="link-block">
-              <a href="https://github.com/StanfordMSL/SousVide" target="_blank"
+              <a href="https://github.com/madang6/SINGER" target="_blank"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -410,6 +410,9 @@ End image carousel -->
               <img src="static/images/full-network-small.jpg" alt="Network Architecture" loading="lazy" style="max-width: 100%; height: auto; border-radius: 8px;"/>
             </div>
           </div>
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p>SINGER uses a lightweight end-to-end visuomotor policy trained via imitation learning from an expert model predictive controller. The policy takes as input an ego-view RGB image and a natural language query specifying the goal object, and directly outputs real-time control actions for closed-loop drone navigation. This architecture enables onboard inference with minimal latency, allowing the drone to reactively navigate toward open-vocabulary targets using only onboard sensing and compute.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -426,8 +429,11 @@ End image carousel -->
           <h2 class="title is-3">Experiments</h2>
           <div class="columns is-centered has-text-centered">
             <div class="column is-full">
-              <img src="static/images/results-all-small.jpg" alt="Experimental Results" loading="lazy" style="max-width: 100%; height: auto; border-radius: 8px;"/>
+              <img src="static/images/results-all-small.jpg" alt="Comparison of SINGER policy variants and baseline on hardware flight experiments" loading="lazy" style="max-width: 100%; height: auto; border-radius: 8px;"/>
             </div>
+          </div>
+          <div class="content has-text-justified" style="margin-top: 1.5rem;">
+            <p>We compare SINGER against a velocity-controlled semantic guidance baseline that decouples perception and control—using a vision-language model to identify targets and a separate velocity controller for navigation. In contrast, SINGER's end-to-end visuomotor policy directly maps RGB images and language queries to control actions. We evaluate two SINGER variants: one using motion capture for ground-truth orientation, and another relying solely on the drone's internal compass, which is subject to sensor noise. This comparison demonstrates the policy's robustness to realistic onboard sensing conditions.</p>
           </div>
         </div>
       </div>
